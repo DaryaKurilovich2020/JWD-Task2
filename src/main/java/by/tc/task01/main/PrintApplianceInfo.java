@@ -1,6 +1,6 @@
 package by.tc.task01.main;
 
-import by.tc.task01.entity.Appliancable;
+import by.tc.task01.entity.Appliance;
 
 import java.io.*;
 
@@ -8,8 +8,8 @@ public class PrintApplianceInfo {
     private static OutputStreamWriter outputStreamWriter;
     private static final BufferedWriter bufferedWriter=new BufferedWriter(outputStreamWriter);
 
-    public static void print(Appliancable appliancable) throws IOException {
-        bufferedWriter.write(appliancable.toString());
+    public static void print(Appliance appliance) throws IOException {
+        bufferedWriter.write(appliance.toString());
         bufferedWriter.close();
     }
 

@@ -1,6 +1,6 @@
 package by.tc.task01.entity;
 
-public class Oven extends Appliancable {
+public class Oven extends Appliance {
    private final int POWER_CONSUMPTION;
    private final double WEIGHT;
    private final int CAPACITY;

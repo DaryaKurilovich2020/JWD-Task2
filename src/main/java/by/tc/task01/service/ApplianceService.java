@@ -1,10 +1,13 @@
 package by.tc.task01.service;
 
-import by.tc.task01.entity.Appliancable;
+import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.criteria.Criteria;
+
+import java.io.IOException;
+import java.util.List;
 
 public interface ApplianceService {	
 	
-	Appliancable find(Criteria criteria);
+	List<Appliance> find(Criteria criteria) throws IOException;
 	
 }

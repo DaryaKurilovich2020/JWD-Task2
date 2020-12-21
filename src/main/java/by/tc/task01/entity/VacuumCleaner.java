@@ -1,6 +1,6 @@
 package by.tc.task01.entity;
 
-public class VacuumCleaner extends Appliancable {
+public class VacuumCleaner extends Appliance {
     private final int POWER_CONSUMPTION;
     private final int MOTOR_SPEED_REGULATION;
     private final double CLEANING_WIDTH;

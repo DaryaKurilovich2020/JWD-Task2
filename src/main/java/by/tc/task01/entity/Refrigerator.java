@@ -1,6 +1,6 @@
 package by.tc.task01.entity;
 
-public class Refrigerator extends Appliancable {
+public class Refrigerator extends Appliance {
     private final int POWER_CONSUMPTION;
     private final double WEIGHT;
     private final double FREEZER_CAPACITY;
