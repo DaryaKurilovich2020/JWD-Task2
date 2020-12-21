@@ -8,6 +8,7 @@ import by.tc.task01.service.ApplianceService;
 import by.tc.task01.service.ServiceFactory;
 
 import java.io.IOException;
+import java.util.List;
 
 public class Main {
 
@@ -22,9 +23,9 @@ public class Main {
 		Criteria criteriaOven = new Criteria(Oven.class.getSimpleName());//"Oven"
 		criteriaOven.add(Oven.CAPACITY.toString(), 3);
 
-		appliance = service.find(criteriaOven);
+		List<Appliance> appliances = service.find(criteriaOven);
 
-		PrintApplianceInfo.print(appliance);
+		PrintApplianceInfo.print(appliances);
 
 		//////////////////////////////////////////////////////////////////
 
@@ -32,9 +33,9 @@ public class Main {
 		criteriaOven.add(Oven.HEIGHT.toString(), 200);
 		criteriaOven.add(Oven.DEPTH.toString(), 300);
 
-		appliance = service.find(criteriaOven);
+		List<Appliance> appliances2 = service.find(criteriaOven);
 
-		PrintApplianceInfo.print(appliance);
+		PrintApplianceInfo.print(appliances2);
 
 		//////////////////////////////////////////////////////////////////
 		
@@ -43,9 +44,9 @@ public class Main {
 		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES.toString(), 14);
 		criteriaTabletPC.add(TabletPC.MEMORY_ROM.toString(), 4);
 
-		appliance = service.find(criteriaOven);// find(Object...obj)
+		List<Appliance> appliances3 = service.find(criteriaOven);// find(Object...obj)
 
-		PrintApplianceInfo.print(appliance);
+		PrintApplianceInfo.print(appliances3);
 
 	}
 
