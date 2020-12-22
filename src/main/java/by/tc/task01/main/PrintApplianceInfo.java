@@ -7,10 +7,8 @@ import java.util.List;
 
 public class PrintApplianceInfo {
     public static void print(List<Appliance> appliances) throws IOException {
-        if (appliances != null) {
-            for (Appliance appliance : appliances) {
-                System.out.println(appliance.toString());
-            }
+        for (Appliance appliance : appliances) {
+            System.out.println(appliance.toString());
         }
     }
 
