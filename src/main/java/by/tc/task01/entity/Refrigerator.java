@@ -16,4 +16,28 @@ public class Refrigerator extends Appliance {
         this.HEIGHT = HEIGHT;
         this.WIDTH = WIDTH;
     }
+
+    public int getPOWER_CONSUMPTION() {
+        return POWER_CONSUMPTION;
+    }
+
+    public double getWEIGHT() {
+        return WEIGHT;
+    }
+
+    public double getFREEZER_CAPACITY() {
+        return FREEZER_CAPACITY;
+    }
+
+    public double getOVERALL_CAPACITY() {
+        return OVERALL_CAPACITY;
+    }
+
+    public double getHEIGHT() {
+        return HEIGHT;
+    }
+
+    public double getWIDTH() {
+        return WIDTH;
+    }
 }

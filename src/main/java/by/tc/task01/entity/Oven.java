@@ -16,4 +16,28 @@ public class Oven extends Appliance {
         this.HEIGHT = HEIGHT;
         this.WIDTH = WIDTH;
     }
+
+    public int getPOWER_CONSUMPTION() {
+        return POWER_CONSUMPTION;
+    }
+
+    public double getWEIGHT() {
+        return WEIGHT;
+    }
+
+    public int getCAPACITY() {
+        return CAPACITY;
+    }
+
+    public double getDEPTH() {
+        return DEPTH;
+    }
+
+    public double getHEIGHT() {
+        return HEIGHT;
+    }
+
+    public double getWIDTH() {
+        return WIDTH;
+    }
 }

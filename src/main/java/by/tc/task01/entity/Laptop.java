@@ -16,6 +16,30 @@ public class Laptop extends Appliance {
         this.CPU = CPU;
         this.DISPLAY_INCHES = DISPLAY_INCHES;
     }
+
+    public double getBATTERY_CAPACITY() {
+        return BATTERY_CAPACITY;
+    }
+
+    public String getOS() {
+        return OS;
+    }
+
+    public int getMEMORY_ROM() {
+        return MEMORY_ROM;
+    }
+
+    public int getSYSTEM_MEMORY() {
+        return SYSTEM_MEMORY;
+    }
+
+    public double getCPU() {
+        return CPU;
+    }
+
+    public double getDISPLAY_INCHES() {
+        return DISPLAY_INCHES;
+    }
 }
 
 

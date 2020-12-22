@@ -16,4 +16,24 @@ public class TabletPC extends Appliance {
         this.FLASH_MEMORY_CAPACITY = FLASH_MEMORY_CAPACITY;
         this.COLOR = COLOR;
     }
+
+    public int getBATTERY_CAPACITY() {
+        return BATTERY_CAPACITY;
+    }
+
+    public double getDISPLAY_INCHES() {
+        return DISPLAY_INCHES;
+    }
+
+    public int getMEMORY_ROM() {
+        return MEMORY_ROM;
+    }
+
+    public int getFLASH_MEMORY_CAPACITY() {
+        return FLASH_MEMORY_CAPACITY;
+    }
+
+    public String getCOLOR() {
+        return COLOR;
+    }
 }

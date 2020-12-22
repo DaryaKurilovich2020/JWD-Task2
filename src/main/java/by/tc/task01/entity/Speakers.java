@@ -12,4 +12,20 @@ public class Speakers extends Appliance {
         this.CORD_LENGTH = CORD_LENGTH;
         this.FREQUENCY_RANGE = FREQUENCY_RANGE;
     }
+
+    public int getPOWER_CONSUMPTION() {
+        return POWER_CONSUMPTION;
+    }
+
+    public int getNUMBER_OF_SPEAKERS() {
+        return NUMBER_OF_SPEAKERS;
+    }
+
+    public double getCORD_LENGTH() {
+        return CORD_LENGTH;
+    }
+
+    public String getFREQUENCY_RANGE() {
+        return FREQUENCY_RANGE;
+    }
 }
