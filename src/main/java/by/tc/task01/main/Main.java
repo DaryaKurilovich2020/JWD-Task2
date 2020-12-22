@@ -23,9 +23,9 @@ public class Main {
 		Criteria criteriaOven = new Criteria(Oven.class.getSimpleName());//"Oven"
 		criteriaOven.add(Oven.CAPACITY.toString(), 3);
 
-		List<Appliance> appliances = service.find(criteriaOven);
+		List<Appliance> ovens1 = service.find(criteriaOven);
 
-		PrintApplianceInfo.print(appliances);
+		PrintApplianceInfo.print(ovens1);
 
 		//////////////////////////////////////////////////////////////////
 
@@ -33,9 +33,9 @@ public class Main {
 		criteriaOven.add(Oven.HEIGHT.toString(), 200);
 		criteriaOven.add(Oven.DEPTH.toString(), 300);
 
-		List<Appliance> appliances2 = service.find(criteriaOven);
+		List<Appliance> ovens2 = service.find(criteriaOven);
 
-		PrintApplianceInfo.print(appliances2);
+		PrintApplianceInfo.print(ovens2);
 
 		//////////////////////////////////////////////////////////////////
 		
@@ -44,9 +44,9 @@ public class Main {
 		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES.toString(), 14);
 		criteriaTabletPC.add(TabletPC.MEMORY_ROM.toString(), 4);
 
-		List<Appliance> appliances3 = service.find(criteriaOven);// find(Object...obj)
+		List<Appliance> tabletPCs = service.find(criteriaOven);// find(Object...obj)
 
-		PrintApplianceInfo.print(appliances3);
+		PrintApplianceInfo.print(tabletPCs);
 
 	}
 

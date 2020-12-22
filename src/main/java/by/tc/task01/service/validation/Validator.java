@@ -17,8 +17,10 @@ public class Validator {
         Map<String, Object> criteriaMap = criteria.getCriteria();
         for (String value : criteriaMap.keySet()) {
             if (criteriaMap.get(value) instanceof Number) {
-                if (!validator.get(value).equals(criteriaMap.get(value))) {
-                    return false;
+                if (validator.get(value) != null) {
+                    if (!validator.get(value).equals(criteriaMap.get(value))) {
+                        return false;
+                    }
                 }
             }
         }
