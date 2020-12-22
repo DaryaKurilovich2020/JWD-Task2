@@ -1,44 +1,72 @@
 package by.tc.task01.entity;
 
-public class VacuumCleaner extends Appliance {
-    private final int POWER_CONSUMPTION;
-    private final int MOTOR_SPEED_REGULATION;
-    private final double CLEANING_WIDTH;
-    private final String FILTER_TYPE;
-    private final String BAG_TYPE;
-    private final String WAND_TYPE;
+import java.io.Serializable;
 
-    public VacuumCleaner(int POWER_CONSUMPTION, int MOTOR_SPEED_REGULATION, double CLEANING_WIDTH, String FILTER_TYPE, String BAG_TYPE, String WAND_TYPE) {
-        this.POWER_CONSUMPTION = POWER_CONSUMPTION;
-        this.MOTOR_SPEED_REGULATION = MOTOR_SPEED_REGULATION;
-        this.CLEANING_WIDTH = CLEANING_WIDTH;
-        this.FILTER_TYPE = FILTER_TYPE;
-        this.BAG_TYPE = BAG_TYPE;
-        this.WAND_TYPE = WAND_TYPE;
+public class VacuumCleaner extends Appliance implements Serializable {
+    private int powerConsumption;
+    private int motorSpeedRegulation;
+    private double cleaningWidth;
+    private String filterType;
+    private String bagType;
+    private String wandType;
+
+    public VacuumCleaner() {
     }
 
-    public int getPOWER_CONSUMPTION() {
-        return POWER_CONSUMPTION;
+    public VacuumCleaner(int powerConsumption, int motorSpeedRegulation, double cleaningWidth, String filterType, String bagType, String wandType) {
+        this.powerConsumption = powerConsumption;
+        this.motorSpeedRegulation = motorSpeedRegulation;
+        this.cleaningWidth = cleaningWidth;
+        this.filterType = filterType;
+        this.bagType = bagType;
+        this.wandType = wandType;
     }
 
-    public int getMOTOR_SPEED_REGULATION() {
-        return MOTOR_SPEED_REGULATION;
+    public int getPowerConsumption() {
+        return powerConsumption;
     }
 
-    public double getCLEANING_WIDTH() {
-        return CLEANING_WIDTH;
+    public void setPowerConsumption(int powerConsumption) {
+        this.powerConsumption = powerConsumption;
     }
 
-    public String getFILTER_TYPE() {
-        return FILTER_TYPE;
+    public int getMotorSpeedRegulation() {
+        return motorSpeedRegulation;
     }
 
-    public String getBAG_TYPE() {
-        return BAG_TYPE;
+    public void setMotorSpeedRegulation(int motorSpeedRegulation) {
+        this.motorSpeedRegulation = motorSpeedRegulation;
     }
 
-    public String getWAND_TYPE() {
-        return WAND_TYPE;
+    public double getCleaningWidth() {
+        return cleaningWidth;
+    }
+
+    public void setCleaningWidth(double cleaningWidth) {
+        this.cleaningWidth = cleaningWidth;
+    }
+
+    public String getFilterType() {
+        return filterType;
+    }
+
+    public void setFilterType(String filterType) {
+        this.filterType = filterType;
+    }
+
+    public String getBagType() {
+        return bagType;
+    }
+
+    public void setBagType(String bagType) {
+        this.bagType = bagType;
+    }
+
+    public String getWandType() {
+        return wandType;
+    }
+
+    public void setWandType(String wandType) {
+        this.wandType = wandType;
     }
 }
-

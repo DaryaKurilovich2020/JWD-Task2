@@ -1,43 +1,72 @@
 package by.tc.task01.entity;
 
-public class Oven extends Appliance {
-   private final int POWER_CONSUMPTION;
-   private final double WEIGHT;
-   private final int CAPACITY;
-   private final double DEPTH;
-   private final double HEIGHT;
-   private final double WIDTH;
+import java.io.Serializable;
 
-    public Oven(int POWER_CONSUMPTION, double WEIGHT, int CAPACITY, double DEPTH, double HEIGHT, double WIDTH) {
-        this.POWER_CONSUMPTION = POWER_CONSUMPTION;
-        this.WEIGHT = WEIGHT;
-        this.CAPACITY = CAPACITY;
-        this.DEPTH = DEPTH;
-        this.HEIGHT = HEIGHT;
-        this.WIDTH = WIDTH;
+public class Oven extends Appliance implements Serializable {
+    private int powerConsumption;
+    private double weight;
+    private int capacity;
+    private double depth;
+    private double height;
+    private double width;
+
+    public int getPowerConsumption() {
+        return powerConsumption;
     }
 
-    public int getPOWER_CONSUMPTION() {
-        return POWER_CONSUMPTION;
+    public void setPowerConsumption(int powerConsumption) {
+        this.powerConsumption = powerConsumption;
     }
 
-    public double getWEIGHT() {
-        return WEIGHT;
+    public double getWeight() {
+        return weight;
     }
 
-    public int getCAPACITY() {
-        return CAPACITY;
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 
-    public double getDEPTH() {
-        return DEPTH;
+    public int getCapacity() {
+        return capacity;
     }
 
-    public double getHEIGHT() {
-        return HEIGHT;
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 
-    public double getWIDTH() {
-        return WIDTH;
+    public double getDepth() {
+        return depth;
+    }
+
+    public void setDepth(double depth) {
+        this.depth = depth;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public Oven(int powerConsumption, double weight, int capacity, double depth, double height, double width) {
+        this.powerConsumption = powerConsumption;
+        this.weight = weight;
+        this.capacity = capacity;
+        this.depth = depth;
+        this.height = height;
+        this.width = width;
+    }
+
+    public Oven() {
     }
 }

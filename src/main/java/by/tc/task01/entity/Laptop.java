@@ -1,44 +1,73 @@
 package by.tc.task01.entity;
 
-public class Laptop extends Appliance {
-    private final double BATTERY_CAPACITY;
-    private final String OS;
-    private final int MEMORY_ROM;
-    private final int SYSTEM_MEMORY;
-    private final double CPU;
-    private final double DISPLAY_INCHES;
+import java.io.Serializable;
 
-    public Laptop(double BATTERY_CAPACITY, String OS, int MEMORY_ROM, int SYSTEM_MEMORY, double CPU, double DISPLAY_INCHES) {
-        this.BATTERY_CAPACITY = BATTERY_CAPACITY;
-        this.OS = OS;
-        this.MEMORY_ROM = MEMORY_ROM;
-        this.SYSTEM_MEMORY = SYSTEM_MEMORY;
-        this.CPU = CPU;
-        this.DISPLAY_INCHES = DISPLAY_INCHES;
+public class Laptop extends Appliance implements Serializable {
+    private  double batteryCapacity;
+    private  String os;
+    private  int memoryRom;
+    private  int systemMemory;
+    private  double cpu;
+    private  double displayInches;
+
+    public Laptop() {
     }
 
-    public double getBATTERY_CAPACITY() {
-        return BATTERY_CAPACITY;
+    public Laptop(double batteryCapacity, String os, int memoryRom, int systemMemory, double cpu, double displayInches) {
+        this.batteryCapacity = batteryCapacity;
+        this.os = os;
+        this.memoryRom = memoryRom;
+        this.systemMemory = systemMemory;
+        this.cpu = cpu;
+        this.displayInches = displayInches;
     }
 
-    public String getOS() {
-        return OS;
+    public double getBatteryCapacity() {
+        return batteryCapacity;
     }
 
-    public int getMEMORY_ROM() {
-        return MEMORY_ROM;
+    public void setBatteryCapacity(double batteryCapacity) {
+        this.batteryCapacity = batteryCapacity;
     }
 
-    public int getSYSTEM_MEMORY() {
-        return SYSTEM_MEMORY;
+    public String getOs() {
+        return os;
     }
 
-    public double getCPU() {
-        return CPU;
+    public void setOs(String os) {
+        this.os = os;
     }
 
-    public double getDISPLAY_INCHES() {
-        return DISPLAY_INCHES;
+    public int getMemoryRom() {
+        return memoryRom;
+    }
+
+    public void setMemoryRom(int memoryRom) {
+        this.memoryRom = memoryRom;
+    }
+
+    public int getSystemMemory() {
+        return systemMemory;
+    }
+
+    public void setSystemMemory(int systemMemory) {
+        this.systemMemory = systemMemory;
+    }
+
+    public double getCpu() {
+        return cpu;
+    }
+
+    public void setCpu(double cpu) {
+        this.cpu = cpu;
+    }
+
+    public double getDisplayInches() {
+        return displayInches;
+    }
+
+    public void setDisplayInches(double displayInches) {
+        this.displayInches = displayInches;
     }
 }
 

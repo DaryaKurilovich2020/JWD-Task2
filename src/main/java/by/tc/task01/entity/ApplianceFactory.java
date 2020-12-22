@@ -91,6 +91,6 @@ public class ApplianceFactory {
         int numberOfSpeakers = Integer.parseInt(data.get(2));
         String frequencyRange = data.get(4);
         double cordLength = Double.parseDouble(data.get(4));
-        return new Speakers(powerConsumption, numberOfSpeakers, frequencyRange, cordLength);
+        return new Speakers(powerConsumption, numberOfSpeakers, cordLength, frequencyRange);
     }
 }

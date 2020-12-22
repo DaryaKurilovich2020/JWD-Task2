@@ -1,31 +1,52 @@
 package by.tc.task01.entity;
 
-public class Speakers extends Appliance {
-    private final int POWER_CONSUMPTION;
-    private final int NUMBER_OF_SPEAKERS;
-    private final double CORD_LENGTH;
-    private final String FREQUENCY_RANGE;
+import java.io.Serializable;
 
-    public Speakers(int POWER_CONSUMPTION, int NUMBER_OF_SPEAKERS, String FREQUENCY_RANGE,double CORD_LENGTH) {
-        this.POWER_CONSUMPTION = POWER_CONSUMPTION;
-        this.NUMBER_OF_SPEAKERS = NUMBER_OF_SPEAKERS;
-        this.CORD_LENGTH = CORD_LENGTH;
-        this.FREQUENCY_RANGE = FREQUENCY_RANGE;
+public class Speakers extends Appliance implements Serializable {
+    private  int powerConsumption;
+    private  int numberOfSpeakers;
+    private double cordLength;
+    private  String frequencyRange;
+
+    public int getPowerConsumption() {
+        return powerConsumption;
     }
 
-    public int getPOWER_CONSUMPTION() {
-        return POWER_CONSUMPTION;
+    public void setPowerConsumption(int powerConsumption) {
+        this.powerConsumption = powerConsumption;
     }
 
-    public int getNUMBER_OF_SPEAKERS() {
-        return NUMBER_OF_SPEAKERS;
+    public int getNumberOfSpeakers() {
+        return numberOfSpeakers;
     }
 
-    public double getCORD_LENGTH() {
-        return CORD_LENGTH;
+    public void setNumberOfSpeakers(int numberOfSpeakers) {
+        this.numberOfSpeakers = numberOfSpeakers;
     }
 
-    public String getFREQUENCY_RANGE() {
-        return FREQUENCY_RANGE;
+    public double getCordLength() {
+        return cordLength;
+    }
+
+    public void setCordLength(double cordLength) {
+        this.cordLength = cordLength;
+    }
+
+    public String getFrequencyRange() {
+        return frequencyRange;
+    }
+
+    public void setFrequencyRange(String frequencyRange) {
+        this.frequencyRange = frequencyRange;
+    }
+
+    public Speakers(int powerConsumption, int numberOfSpeakers, double cordLength, String frequencyRange) {
+        this.powerConsumption = powerConsumption;
+        this.numberOfSpeakers = numberOfSpeakers;
+        this.cordLength = cordLength;
+        this.frequencyRange = frequencyRange;
+    }
+
+    public Speakers() {
     }
 }

@@ -1,39 +1,63 @@
 package by.tc.task01.entity;
 
 import java.awt.*;
+import java.io.Serializable;
 
-public class TabletPC extends Appliance {
-    private final int BATTERY_CAPACITY;
-    private final double DISPLAY_INCHES;
-    private final int MEMORY_ROM;
-    private final int FLASH_MEMORY_CAPACITY;
-    private final String  COLOR;
+public class TabletPC extends Appliance implements Serializable {
+    private int batteryCapacity;
+    private double displayInches;
+    private int memoryRom;
+    private int fleshMemoryCapacity;
+    private String color;
 
-    public TabletPC(int BATTERY_CAPACITY, double DISPLAY_INCHES, int MEMORY_ROM, int FLASH_MEMORY_CAPACITY, String COLOR) {
-        this.BATTERY_CAPACITY = BATTERY_CAPACITY;
-        this.DISPLAY_INCHES = DISPLAY_INCHES;
-        this.MEMORY_ROM = MEMORY_ROM;
-        this.FLASH_MEMORY_CAPACITY = FLASH_MEMORY_CAPACITY;
-        this.COLOR = COLOR;
+    public int getBatteryCapacity() {
+        return batteryCapacity;
     }
 
-    public int getBATTERY_CAPACITY() {
-        return BATTERY_CAPACITY;
+    public void setBatteryCapacity(int batteryCapacity) {
+        this.batteryCapacity = batteryCapacity;
     }
 
-    public double getDISPLAY_INCHES() {
-        return DISPLAY_INCHES;
+    public double getDisplayInches() {
+        return displayInches;
     }
 
-    public int getMEMORY_ROM() {
-        return MEMORY_ROM;
+    public void setDisplayInches(double displayInches) {
+        this.displayInches = displayInches;
     }
 
-    public int getFLASH_MEMORY_CAPACITY() {
-        return FLASH_MEMORY_CAPACITY;
+    public int getMemoryRom() {
+        return memoryRom;
     }
 
-    public String getCOLOR() {
-        return COLOR;
+    public void setMemoryRom(int memoryRom) {
+        this.memoryRom = memoryRom;
+    }
+
+    public int getFleshMemoryCapacity() {
+        return fleshMemoryCapacity;
+    }
+
+    public void setFleshMemoryCapacity(int fleshMemoryCapacity) {
+        this.fleshMemoryCapacity = fleshMemoryCapacity;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public TabletPC(int batteryCapacity, double displayInches, int memoryRom, int fleshMemoryCapacity, String color) {
+        this.batteryCapacity = batteryCapacity;
+        this.displayInches = displayInches;
+        this.memoryRom = memoryRom;
+        this.fleshMemoryCapacity = fleshMemoryCapacity;
+        this.color = color;
+    }
+
+    public TabletPC() {
     }
 }
